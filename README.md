@@ -1,2 +1,2 @@
-# testpage2
-for git page 
+# SICEC
+Build Africa today and tomorrow
