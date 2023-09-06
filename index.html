@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- Custom Style -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Flather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.9.2/css/flag-icons.min.css"/>
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- script animation -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -22,47 +25,53 @@
 </head>
 <body>
     <header class="">
-        <div class="container-fluid bg custom-w80 h-100 w-100">
-            <nav class="navbar navbar-expand-lg pt-lg-3 w-75 mx-auto mb-4 mb-lg-0">
+        <div class="container-fluid d-md-flex align-items-md-end bg custom-w80 h-100 w-100 ">
+            <nav class="navbar fixed-top nav-bg navbar-expand-lg pt-lg-3 w-75 mx-auto mb-4 mb-lg-0 ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/logo sicec.jpg" alt="Bootstrap" width="30" height="24">
+                    <!-- <a class="navbar-brand" href="#">
+                        <img src="./assets/logo sicec.jpg" alt="Bootstrap" width="60" height="48">
                     </a>                  
-                    <a class="navbar-brand" href="#">SICEC</a>
+                    <a class="navbar-brand" href="#">SICEC</a> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse nav justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse nav justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 nav-md-w justify-content-md-evenly  ">
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">A propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacter</a>
+                                <a class="nav-link" href="#service">Nos services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#realisation">Nos services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="row flex-column flex-md-row justify-content-around align-items-center custom-h w-100 mx-auto">
-                <div class="col-11 col-sm-7 col-md-5 col-lg-4 order-1 order-md-0 d-flex flex-column justify-content-between bg-color text-color-purple p-5 card-blue-h">
-                    <h2 class="text-uppercase fw-bold text-center text-white">notre mission</h2>
+            <div class="m-0 row flex-column flex-md-row justify-content-around align-items-center custom-h w-100 mx-auto">
+                <div class="col-11 col-sm-7 col-md-5 col-lg-4 order-1 order-md-0 d-flex flex-column justify-content-between bg-color text-color-purple p-5 rounded-2">
+                    <h2 class="text-uppercase fw-bold text-center text-white mt-3">notre mission</h2>
                     <!-- <p class="text-align"> -->
-                    <p class="text-center">
+                    <p class="text-center mt-3 mb-5">
                         Construire l’Afrique d’aujourd’hui et celle de demain
-                        avec une expertise conjointe <br> sino-africaine,
-                        dans un partenariat <br> gagnant-gagnant
+                        avec une expertise conjointe sino-africaine,
+                        dans un partenariat gagnant-gagnant
                     </p>
-                    <div class="d-flex justify-content-center">
-                        <a href="#sicec" class=" btn-custom text-center ">voir plus</a>
+                    <div class="d-flex justify-content-center mb-3">
+                        <a href="#sicec" class="btn-custom text-center ">voir plus</a>
                     </div>
                 </div>
                 <div class="col-11 d-flex flex-column justify-content-end col-md-6 text-white fw-bolder h-100 h-xs-25">
-                    <div class="col-8 h-50 d-none">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse libero ipsa necessitatibus, rerum non veniam fuga ducimus reiciendis nulla aspernatur modi tempore dolore dolor expedita. Hic voluptatibus et est ab!</p>
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/logo sicec.jpg" alt="" class="sicec">
                     </div>
-                    <div class="col-12 text-md-end text-center">
-                        <h3 class="display-3 text-shadow">L'avenir est ici</h3>
+                    <div class="col-12 text-md-end text-center ">
+                        <h3 class="display-3 text-shadow fw-bold">L'avenir est ici</h3>
                         <p id="sicec" class="text-shadow fst-italic">
                             BUILD AFRICA TODAY AND TOMORROW
                         </p>
@@ -72,295 +81,294 @@
         </div>
     </header>
     <main>
-        <!-- <div class="container-fluid">
-            <h2>Conception et recherche architecturales</h2>
-            <div class="row">
-                <div class="col-12 col-xl-5"></div>
-                <div class="col-12 col-xl-5"></div>
-                <div class="col-12 col-xl-5"></div>
-                <div class="col-12 col-xl-5"></div>
+        <!--                            SICEC                            -->
+        <section class="bg-color-2 py-5">
+            <div class="row m-0 p-0">
+                <div class="col d-flex justify-content-center">
+                    <img src="./assets/ilustrations/sicec.png" alt="sino ivoire construction engineering corporation" class="img-fluid mx-auto">
+                </div>
             </div>
-        </div> -->
-        <div class="container-fluid m-0 p-0">
-
-            <!--                            SICEC                            -->
-            <section class="bg-color-2 py-5">
-                <div class="row m-0 p-0">
-                    <div class="col d-flex justify-content-center">
-                        <img src="./assets/sicec.png" alt="sino ivoire construction engineering corporation" class="img-fluid mx-auto">
-                    </div>
-                </div>
-            </section>
+        </section>
             
+        <!--                           A PROPOS                            -->
+        <section class="bg-color-6 py-5" id="about">
+            <div class="row w-80 flex-column flex-md-row mx-auto h-100 my-3">
+                <div class="col-12 col-md-6 d-flex p-0 justify-content-center justify-content-md-end custom-h-about">
+                    <!-- <div class="col-1 col-md-2 h-40 align-self-end bg-color-8 mb-5"></div> -->
+                    <span class="bande bg-color-8 align-self-end"></span>
+                    <div class="col-11 about-gb shadow-lg">
+                        <!-- <img src="./assets/img_8.jpg" alt="illustration" class="img-fluid"> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start p-0">
+                    <div class="col-11 d-flex flex-column justify-content-center shadow-lg bg-white mt-2 mt-md-0 py-3 py-md-5 px-md-5 px-3">
+                        <h2 class="fw-bolder fs-1 text-center mb-4 roboto">À propos de SICEC</h2>
+                        <p class="text-align fs-5 roboto">
+                            Fruit de la coopération sino-ivoirienne, 
+                            SICEC s’appuie sur l’expertise chinoise et le 
+                            savoir-faire africain pour la réalisation des projets 
+                            d’infrastructure en Afrique. Spécialisée dans le Génie civil, 
+                            les Travaux publics, le Bâtiment, l’Hydraulique et l’Energie, 
+                            SICEC associe à la fois l’ingéniosité, la qualité et 
+                            le respect des délais dans l’exécution de ses travaux.
+                        </p>
+                    </div>
+                    <!-- <div class="col-1 col-md-2 bg-color-8 h-40 align-self-center bg-color-8 mb-5"></div> -->
+                    <span class="bande bg-color-8 align-self-start"></span>
+                </div>
+            </div>
+        </section>
 
-            <!--                       CARACTERISTIQUES                           -->
-            <section class="bg-color text-white py-5">
-                <h1 class="display-6 fw-bolder text-center mb-4 custom-w mx-auto"><span>S</span>INO <span>I</span>VOIRE <span>C</span>ONSTRUCTION <span>E</span>NGINEERING <span>C</span>ORPORATION</h1>
-                <div class="row custom-w justify-content-center align-items-center my-3 mx-auto mb-5">
-                    <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-between custom-card bg-color-4">
-                        <div class="col-12 custom-h-70 card-bg-1">
-                            <!-- <img src="./assets/card_1.jpg" alt="" class="img-fluid"> -->
+        <!--                       NOS SERVICES                           -->
+        <section class="bg-color text-white py-5" id="service">
+
+            <h1 class="display-2 fw-bolder text-3d text-center mb-4 custom-w mx-auto"><span>S</span>INO <span>I</span>VOIRE <span>C</span>ONSTRUCTION <span>E</span>NGINEERING <span>C</span>ORPORATION</h1>
+            <p class="fst-italic text-lowercase fs-3 text-center w-100">BUILD AFRICA TODAY AND TOMORROW</p>
+            
+            <div class="row custom-w justify-content-center align-items-center my-5 mx-auto"> 
+                <h2 class="text-capitalize fw-bolder p-0 display-4 mb-4 myfont">Nos services</h2>
+                <div class="col-11 col-md-4 d-flex flex-column justify-content-between custom-card bg-color-4 hover">
+                    <div class="col-12 custom-h-top card-bg-1">
+                        <img src="./assets/ilustrations/genie.jpg" alt="accompagner dans l’analyse, conception et la réalisation de vos projets" class="img-fluid">
+                    </div>
+                    <div class="col-12 custom-h-bottom d-flex flex-column justify-content-evenly px-4">
+                        <img src="./assets/icons/ICON_1.png" class="me-auto filter" height="100px" width="100px" alt="logo">
+                        <h3 class="fs-2">Genie civil</h3>
+                        <p class="text-start">
+                            Profitez de l’expertise technique sino-ivoirienne 
+                            pour vous accompagner dans l’analyse, conception 
+                            et la réalisation de vos projets de construction avec SICEC.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-11 col-md-4 d-flex flex-column my-4 my-md-0 justify-content-between custom-card bg-color-5 hover">
+                    <div class="col-12 order-2 order-xl-0 custom-h-top d-flex flex-column justify-content-evenly px-4 text-color-dark-blue">
+                        <img src="./assets/icons/ICON_3.png" class="me-auto filter" height="100px" width="100px" alt="logo">
+                        <h3 class="fs-2">Financement <br>de projet</h3>
+                        <p class="text-start">
+                            Profitez de notre réseau de partenaires financiers 
+                            pour réalisez vos projets de construction avec une expertise 
+                            conjointe chinoise et ivoirienne.
+                        </p>
+                    </div>
+                    <div id="card-bg-2" class="col-12 custom-h-top card-bg-1">
+                        <img src="./assets/ilustrations/finance.jpg" alt="réseau de partenaire financier développer par la société sino-ivoirienne SICEC" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-11 col-md-4 d-flex flex-column justify-content-between custom-card bg-white hover">
+                    <div class="col-12 custom-h-top card-bg-1">
+                        <img src="./assets/ilustrations/contruction.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 custom-h-top d-flex flex-column justify-content-evenly px-4 text-color-dark-blue">
+                        <img src="./assets/icons/ICON_2.png" class="me-auto filter" height="100px" width="100px" alt="logo">
+                        <h3 class="text-danger fs-2">Construction</h3>
+                        <p class="text-start">
+                            Nos experts ivoiriens et chinois mettent leur 
+                            expérience à votre disposition dans la maîtrise 
+                            d’œuvre de votre projet de construction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row flex-column flex-md-row text-black align-items-center align-items-md-start justify-content-md-evenly mx-auto pt-5">
+                <div class="col-10 col-md-3 h-auto shadow-sm pt-4 bg-sicec mb-4 mb-md-0">
+                    <h4 class="mb-3 fs-5 border-bottom border-2 border-black pb-2">Conception et Modélisation</h4>
+                    <ul>
+                        <li>Coupe</li>
+                        <li>Façade</li>
+                        <li>Images de synthèses (3D)</li>
+                        <li>Calcul de structure</li>
+                        <li>Électricité</li>
+                        <li>Plomberie</li>
+                        <li>Assainissement</li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-5 shadow-sm pt-4 bg-sicec mb-4 mb-md-0">
+                    <h4 class="mb-3 fs-5 border-bottom border-2 border-black pb-2">Réalisation des traveaux</h4>
+                    <ul class="d-flex flex-column flex-md-row justify-content-between me">
+                        <li class="fw-bold">GROS ŒUVRE
+                            <ul class="fw-normal">
+                                <li>Construction Neuve</li>
+                                <li>Extension, modification</li>
+                                <li>Réhabilitation</li>
+                                <li>VRD</li>
+                            </ul>
+                        </li>
+                        <li class="fw-bold">SECONDE ŒUVRE
+                            <ul class="fw-normal">
+                                <li>Peinture</li>
+                                <li>Faux-plafond</li>
+                                <li>Carrelage</li>
+                                <li>Electricité</li>
+                                <li>Électricité</li>
+                                <li>Menuiserie Alu et bois</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-3 shadow-sm pt-4 bg-sicec mb-4 mb-md-0">
+                    <h4 class="mb-3 fs-5 border-bottom border-2 border-black pb-2">Travaux divers</h4>
+                    <ul>
+                        <li>Construction métallique</li>
+                        <li>Piscine</li>
+                        <li>Réseaux routiers</li>
+                        <li>Coordination</li>
+                        <li>Pilotage</li>
+                        <li>Suivi</li>
+                        <li>Contrôle de vos travaux</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--                       NOS QUALITES                           -->
+        <section class="py-4">
+            <div class="row w-80 mx-auto mt-3 mb-0 mb-md-5">
+                <h2 class="text-capitalize fw-bold p-0 display-4 mb-4 myfont">Notre Engagement envers la Qualité</h2>
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-evenly mt-1 mt-md-3">
+                    
+                    <div class="col-12 col-md-9 mb-4 h-auto d-flex align-items-start justify-content-between px-1 px-md-2 pt-3 pb-2 pb-md-4 bord-1">
+                        <span class="tag fs-3 me-2 me-md-0">1</span>
+                        <div class="col-10">
+                            <h5 class="fw-bold">Normes élevées</h5>
+                            <p>
+                                Nous maintenons des normes élevées de qualité pour chaque projet que nous entreprenons.
+                            </p>
                         </div>
-                        <div class="col-12 custom-h-30 d-flex flex-column justify-content-between justify-content-lg-around p-1 px-4 px-lg-4">
-                            <img src="./assets/icons/ICON_1.png" class="me-auto" height="100px" width="100px" alt="logo">
-                            <h3 class="">civil engineering</h3>
-                            <p class="text-start">
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua
+                    </div>
+                    <div class="col-12 col-md-9 mb-4 h-auto d-flex align-items-start justify-content-between px-1 px-md-2 pt-3 pb-2 pb-md-4">
+                        <span class="tag fs-3 me-2 me-md-0">2</span>
+                        <div class="col-10">
+                            <h5 class="fw-bold">Matériaux de qualités</h5>
+                            <p>
+                                Nous n'utilisons que les matériaux de la plus haute qualité pour nos projets de construction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 mb-4 h-auto d-flex align-items-start justify-content-between px-1 px-md-2 pt-3 pb-2 pb-md-4">
+                        <span class="tag fs-3 me-2 me-md-0">3</span>
+                        <div class="col-10">
+                            <h5 class="fw-bold">Contrôle de qualité</h5>
+                            <p>
+                                Nous appliquons une inspection de qualité rigoureuse à chaque étape de la construction pour garantir la sécurité et la durabilité de chaque projet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 mb-4 h-auto d-flex align-items-start justify-content-between px-1 px-md-2 pt-3 pb-2 pb-md-4">
+                        <span class="tag fs-3 me-2 me-md-0">4</span>
+                        <div class="col-10">
+                            <h5 class="fw-bold">Satisfaction client</h5>
+                            <p>
+                                Nous sommes engagés à assurer la satisfaction du client, en prenant en compte les commentaires et les critiques pour améliorer constamment nos compétences.
                             </p>
                         </div>
                     </div>
                     
-                    <div class="col-12 col-md-6 col-xl-4 d-flex flex-column my-4 my-md-0 justify-content-between custom-card bg-color-5">
-                        <div class="col-12 order-2 order-xl-0 custom-h-30 d-flex flex-column justify-content-between justify-content-lg-around p-1 px-4 px-lg-4 text-color-dark-blue">
-                            <img src="./assets/icons/ICON_2.png" class="me-auto" height="100px" width="100px" alt="logo">
-                            <h3>project financing</h3>
-                            <p class="text-start">
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua
-                            </p>
-                        </div>
-                        <div id="card-bg-2" class="col-12 custom-h-70 card-bg-1">
-                            <!-- <img src="./assets/card_2.jpg" alt="" class="img-fluid"> -->
-                        </div>
+                </div>
+                <div class="col-md-5 d-none d-md-flex p-0 mt-3 div-side">
+                    <img src="./assets/ilustrations/qualité.jpg" class="img-side" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!--                       NOS REALISATIONS                           -->
+        
+        <section class="pb-md-3" id="realisation">
+            <h2 class="text-capitalize fw-bold p-0 display-4 mb-4 w-80 mx-auto myfont">Nos réalisations</h2>
+            <div class="row mx-auto p-0 w-90 vh-md-110 justify-content-center">
+                <div class="col-12 col-md-4 d-flex flex-md-column justify-content-between justify-content-md-center">
+                    <div class="col-md-12 img-box">
+                        <img src="./assets/ilustrations/img5.jpg" alt="" class="img-cover">
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4 d-flex flex-column justify-content-between custom-card bg-white">
-                        <div class="col-12 custom-h-70 card-bg-1">
-                            <!-- <img src="./assets/card_1.jpg" alt="" class="img-fluid"> -->
-                        </div>
-                        <div class="col-12 custom-h-30 d-flex flex-column justify-content-between justify-content-lg-around p-1 px-4 px-lg-4 text-color-dark-blue">
-                            <img src="./assets/icons/ICON_1.png" class="me-auto" height="100px" width="100px" alt="logo">
-                            <h3 class="text-danger">construction management</h3>
-                            <p class="text-start">
-                                Lorem ipsum dolor sit amet, consectetur 
-                                adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua
-                            </p>
-                        </div>
+                    <div class="col-md-12 img-box">
+                        <img src="./assets/ilustrations/img9.jpg" alt="" class="img-cover">
                     </div>
                 </div>
-            </section>
-            <!-- <section>
-                <div class="row">
-                    <h2>Conception et recherche architecturales</h2>
-                    <div class="col-12 col-xl-6">
-                        <div class="col-6">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Congue eu consequat ac felis donec et odio pellentesque diam. 
-                                Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Blandit turpis cursus in hac. Tristique senectus et netus et 
-                            </p>
-                        </div>
+                <div class="col-12 col-md-4 d-flex flex-md-column justify-content-between justify-content-md-end">
+                    <div class="col-md-12 img-box">
+                        <img src="./assets/ilustrations/img7.png" alt="" class="img-cover">
                     </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="col-6">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Congue eu consequat ac felis donec et odio pellentesque diam. 
-                                Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Blandit turpis cursus in hac. Tristique senectus et netus et 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="col-6">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Congue eu consequat ac felis donec et odio pellentesque diam. 
-                                Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Blandit turpis cursus in hac. Tristique senectus et netus et 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="col-6">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-6">
-                            <p>
-                                Congue eu consequat ac felis donec et odio pellentesque diam. 
-                                Facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Blandit turpis cursus in hac. Tristique senectus et netus et 
-                            </p>
-                        </div>
+                    <div class="col-md-12 img-box-b">
+                        <img src="./assets/ilustrations/img6.png" alt="" class="img-cover">
                     </div>
                 </div>
-            </section> -->
-            <!-- <section>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <span></span>
-                        <img src="" alt="">
+                <div class="col-12 col-md-4 d-flex flex-md-column justify-content-between justify-content-md-start">
+                    <div class="col-md-12 img-box">
+                        <img src="./assets/ilustrations/img8.jpg" alt="" class="img-cover">
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <span></span>
-                        <img src="" alt="">
+                    <div class="col-md-12 img-box">
+                        <img src="./assets/ilustrations/img4.jpg" alt="" class="img-cover">
                     </div>
                 </div>
-            </section> -->
-
-
-            <!--                           A PROPOS                            -->
-            <section class="bg-color-6 py-5 section-h" id="about">
-                <div class="row w-80 flex-md-row mx-auto h-100">
-                    <div class="col-12 col-md-6 d-flex p-0 custom-h-about">
-                        <div class="col-1 col-md-2 h-40 align-self-end bg-color-8 mb-5"></div>
-                        <div class="col-11 about-gb">
-                            <!-- <img src="./assets/img_8.jpg" alt="illustration" class="img-fluid"> -->
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex p-0">
-                        <div class="col-11 bg-white p-4 d-flex flex-column justify-content-center ">
-                            <h2 class="fw-bold text-center mb-md-3">À propos de SICEC</h2>
-                            <p class="text-align">
-                                Fruit de la coopération sino-ivoirienne, 
-                                SICEC s’appuie sur l’expertise chinoise et le 
-                                savoir-faire africain pour la réalisation des projets 
-                                d’infrastructure en Afrique. Spécialisée dans le Génie civil, 
-                                les Travaux publics, le Bâtiment, l’Hydraulique et l’Energie, 
-                                SICEC associe à la fois l’ingéniosité, la qualité et 
-                                le respect des délais dans l’exécution de ses travaux.
-                            </p>
-                        </div>
-                        <div class="col-1 col-md-2 bg-color-8 h-40 align-self-center bg-color-8 mb-5"></div>
-                    </div>
+            </div>
+            <div class="row p-0 m-0 my-4">
+                <div class="col-12 col-md-8 mx-auto">
+                    <iframe 
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe> 
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--                        NOS REALISATIONS                           -->
-            <section id="realisation" class="bg-color text-white custom-w100">
-                <div class="row flex-column flex-md-row pt-4 pb-2 w-100">
-                    <h2 class="text-center">NOS REALISATIONS</h2>
-                    <p class="text-align w-80 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores totam animi, minus id officia ipsum assumenda, ipsa nulla error cumque earum fuga eos esse a doloremque temporibus repudiandae dignissimos rem.</p>
-                    
-                    <div class="col-12 d-flex flex-column flex-md-row w-100">
-                        <div class="col-10 col-md-5 col-lg-5 d-flex flex-row col-lg-3 border-color-8 mx-auto my-md-5 mt-3 p-0">
-                            <div class="col-11 ">
-                                <img src="./assets/ilustrations/illustration_1.jpg" alt="" class="img-fluid shadow-color-2">
-                            </div>
-                        </div>
-                        <div class="col-10 col-md-5 col-lg-5 d-flex flex-row col-lg-3 border-color-8 mx-auto my-5 mb-md-5 p-0">
-                            <div class="col-11 ">
-                                <img src="./assets/ilustrations/illustration_2.jpg" alt="" class="img-fluid shadow-color-2">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 d-flex flex-column flex-md-row ">
-                        <div class="col-10 col-md-5 col-lg-5 d-flex flex-row col-lg-3 border-color-8 mx-auto my-md-5 p-0">
-                            <div class="col-11 ">
-                                <img src="./assets/ilustrations/illustration_3.jpg" alt="" class="img-fluid shadow-color-2">
-                            </div>
-                        </div>
-                        <div class="col-10 col-md-5 col-lg-5 d-flex flex-row col-lg-3 border-color-8 mx-auto my-5 mb-md-5 p-0">
-                            <div class="col-11 ">
-                                <img src="./assets/ilustrations/illustration_4.jpg" alt="" class="img-fluid shadow-color-2">
-                            </div>
-                        </div>
-                    </div>
-
+        <!--                    NOS PARTENAIRES               -->
+        <section id="slider" class="pt-3 pb-5">
+            <div class="container-fluid">
+                <h2 class="text-capitalize fw-bold p-0 display-4 w-80 mx-auto mb-4 myfont">Nos partenaires</h2>
+                <div class="row slider d-flex align-items-center  flex-nowrap flex-row m-0 p-0">
+                    <div class="col-sm-3 col-4 me-2 filter"><img src="./assets/partenaire/guanxi_managment.png" alt="Icon 1" class="img-fluid"></div>
+                    <div class="col-sm-3 col-4 me-2 filter"><img src="./assets/partenaire/guanxi_industry.png" alt="Icon 1" class="img-fluid"></div>
+                    <div class="col-sm-3 col-4 me-2 filter"><img src="./assets/partenaire/EACCI.png" alt="Icon 1" class="img-fluid"></div>
+                    <div class="col-sm-3 col-4 me-2 filter"><img src="./assets/partenaire/Logo-sino-afrique-mag.png" alt="Icon 1" class="img-fluid"></div>
+                    <div class="col-sm-3 col-4 me-2 filter"><img src="./assets/partenaire/g2i.png" alt="Icon 1" class="img-fluid"></div>
+                    <div class="col-sm-3 col-4 me-2 filter"><img src="./assets/partenaire/wietc.png" alt="Icon 1"  class="img-fluid"></div>
+                    <!-- Ajoutez davantage de divs pour les autres icônes -->
                 </div>
-            </section>
+            </div>
+        </section>
 
+        <section class="bg-newsletter d-flex justify-content-center align-items-center">
+            <div class="w-80 p-3 newsletter bg-color mx-auto d-flex flex-column justify-content-center">
+                <p class="w-75 fs-5 mx-auto text-white text-center">
+                    N'oubliez pas de laisser votre e-mail afin de recevoir nos différents documents
+                </p>
+                <form action="" class="w-75 mx-auto d-flex flex-column align-items-center">
+                    <input type="email" name="email" class="w-100 ps-3 shadow-lg py-md-2 py-1 mb-4" id="" placeholder="johndoe@email.com">
+                    <a href="" class="btn-custom-sm mx-auto">Recevoir</a>
+                </form>
+            </div>
+        </section>
 
-            <!--                            NOUS CONTACTER                            -->
-            <section class="bg-color-6 py-4" id="contact">
-                <h2 class="fw-bolder text-center mb-lg-3 mb-5 text-uppercase">Nous contacter</h2>
-                <div class="row h-100">
-                    <div class="col-12 col-lg-6">
-                        <div class="col">
-                            <div class="col d-flex align-items-center justify-content-center mb-3">
-                                <i data-feather="map-pin"></i><span></span> 
-                                <h6 class="fs-4 text-center m-0 ms-2">Adresse</h6>
-                            </div>
-                            <div class="col col-md-8 d-md-flex flex-column justify-content-center align-items-start mx-auto">
-                                <p class="text-start ps-2 ">
-                                    <span class="fw-bolder text-color-dark-blue">CHINA: </span>
-                                    11 Floor, Jian She Lui RVd, Guangzhou, 510060
-                                </p>
-                                <p class="text-start ps-2">
-                                    <span class="fw-bolder text-color-dark-blue text-uppercase">côte d'ivoire : </span>Abidjan, Plateau Bd. Angoulvant
-                                </p>
-                            </div>
-                        </div>
-                        <hr class="w-50 mx-auto bg-color my-5" style="height: 5px;">
-                        <div class="col">
-                            <div class="col d-flex align-items-center justify-content-center mb-3">
-                                <i data-feather="phone"></i><span></span> 
-                                <h6 class="fs-4 text-center m-0 ms-2">Contact</h6>
-                            </div>
-                            <div class="col col-md-8 d-md-flex flex-column justify-content-center align-items-start mx-auto">
-                                <p class="text-start ps-2">
-                                    <span class="fw-bolder text-color-dark-blue text-uppercase">CHINA : </span>
-                                    (+88) 131 673 712 33
-                                </p>
-                                <p class="text-start ps-2">
-                                    <span class="fw-bolder text-color-dark-blue text-uppercase">COTE D'IVOIRE : </span>
-                                    (+225) 07 89 052 198 / 05 85 363 454
-                                </p>
-                            </div>
-                        </div>
-                        <hr class="w-50 mx-auto bg-color my-5" style="height: 5px;">
-                        <div class="col">
-                            <div class="col d-flex align-items-center justify-content-center mb-2">
-                                <i data-feather="mail"></i><span></span> 
-                                <h6 class="fs-4 text-center m-0 ms-2">Email</h6>
-                            </div>
-                            <p class="text-center mx-auto d-inline-block-none w-100">
-                                info@guanxigroup.com
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <hr class="w-50 mx-auto bg-color my-5 my-lg-0 d-lg-none" style="height: 5px;">
-                       <h6 class="my-3 text-center">Laissez nous un message</h6>
-                       <div class="custom-w-80 mx-auto h-75">
-                        <form >
-                        <!-- <form method="POST" action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" > -->
-                            <div class="mb-3">
-                                <!-- <p class="m-0 p-0"><?php echo $err_pass ?></p> -->
-                                <label for="name" class="form-label">Votre nom et prenom</label> 
-                                <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" require>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Votre adresse email</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" require>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Votre message</label>
-                                <textarea name="message" class="form-control" id="message" rows="3" maxlength="70" require></textarea>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn-custom-2">Envoyer</button>
-
-                            </div>
-                        </form>
-                       </div>
-                    </div>
+        <!--                       NOUS CONTACTER                           -->
+        <section id="contact" class="bg-color-6 pt-5 pb-2 py-md-4 position-relative">
+            <h2 class="text-capitalize contact-title fw-bold p-0 display-4 mb-4 w-80 mx-auto myfont">Nous contacter</h2>
+            <div class="row justify-content-evenly mb-5 p-0 m-0">
+                <div class="col-10 col-md-3 py-4 card-info">
+                    <h2><i class="bi bi-telephone"></i> Appelez Nous</h2>
+                    <ul class="d-flex w-auto m-0 mt-2">
+                        <li class="mb-2"><span class="fi fi-ci me-2"></span> (+225) 07 890 521 98</li>
+                        <li><span class="fi fi-cn me-2"></span> (+86) 131 6737 1233</li>
+                        <li class="mt-3"><i class="bi bi-envelope me-2"></i></span> info@guanxigroupe.com</li>
+                    </ul>
                 </div>
-            </section>
-
-            <!--                    SLIDER               -->
-            <section id="slider" class="py-3">
-                <div class="container-fluid">
-                    <h2 class="fw-bolder text-center text-uppercase">Nos partenaire</h2>
-                    <div class="row slider d-flex align-items-center  flex-nowrap flex-row m-0 p-0">
-                        <div class="col-sm-3 col-4 me-2"><img src="./assets/partenaire/guanxi_managment.png" alt="Icon 1" class="img-fluid"></div>
-                        <div class="col-sm-3 col-4 me-2"><img src="./assets/partenaire/guanxi_industry.png" alt="Icon 1" class="img-fluid"></div>
-                        <div class="col-sm-3 col-4 me-2"><img src="./assets/partenaire/EACCI.png" alt="Icon 1" class="img-fluid"></div>
-                        <div class="col-sm-3 col-4 me-2"><img src="./assets/partenaire/Logo-sino-afrique-mag.png" alt="Icon 1" class="img-fluid"></div>
-                        <div class="col-sm-3 col-4 me-2"><img src="./assets/partenaire/g2i.png" alt="Icon 1" class="img-fluid"></div>
-                        <div class="col-sm-3 col-4 me-2"><img src="./assets/partenaire/wietc.png" alt="Icon 1"  class="img-fluid"></div>
-                        <!-- Ajoutez davantage de divs pour les autres icônes -->
-                    </div>
+                <div class="col-10 col-md-3 py-4 card-info my-3 my-md-0">
+                    <h2><i class="bi bi-geo-alt"></i> Adresse</h2>
+                    <ul class="d-flex w-auto m-0 mt-2">
+                        <li class="mb-2"><span class="fi fi-cn me-1"></span> Guangzhou 510060-P .R CHINA</li>
+                        <li class="text-center"><span class="fi fi-ci me-1"></span> Abidjan, Plateau Bd. Angoulvant <br>République <span class="text-uppercase">Côte d'Ivoire</span></li>
+                    </ul>
                 </div>
-            </section>
-        </div>
+                <div class="col-10 col-md-3 py-4 card-info">
+                    <h2><i class="bi bi-clock"></i> Horaire</h2>
+                    <ul class="d-flex w-auto m-0 mt-2">
+                        <li class="mb-2"> Lundi - Vendredi </li>
+                        <li>9h00 - 17h00</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer-bg">
         <div class="container-fluid text-white fw-lighter h-100 d-flex justify-content-center">
@@ -370,26 +378,14 @@
                     <a href="#" class="text-danger"><i data-feather="linkedin"></i></a>
                 </div>
                 <p class="text-center m-0 mb-3">SINO IVOIRE CONSTRUCTION ENGINEERING CORPORATION</p>
-                <p class="text-center m-0">Copyright <a href="https://ci.linkedin.com/in/assale-franck-tanoh" target="_blank" class="text-white text-decoration-none">&#xa9</a> 2023</p>
+                <p class="text-center m-0 ">Copyright <a href="https://ci.linkedin.com/in/assale-franck-tanoh" target="_blank" class="text-white text-decoration-none"><i class="bi bi-c-circle copyright"></i></a> 2023</p>
             </div>
         </div>
     </footer>
+    <script src="./assets/js/scrollbar.js"></script>
+    <script src="./assets/js/slide.js"></script>
     <script>
         feather.replace()
-    </script>
-    <script>
-        $(document).ready(function(){
-  $('.slider').slick({
-    slidesToShow: 4, // Nombre d'icônes à afficher à la fois
-    slidesToScroll: 1,
-    autoplay: true, // Défilement automatique
-    autoplaySpeed: 1500, // Délai entre chaque défilement (en millisecondes)
-    infinite: true, // Défilement infini
-    prevArrow: false, // Masquer la flèche précédente
-    nextArrow: false // Masquer la flèche suivante
-  });
-});
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
