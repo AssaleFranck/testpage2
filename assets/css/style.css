@@ -216,7 +216,7 @@ footer {
 
 /* --------------- TEXT ----------------- */
 .text-align {
-    text-align: justify;
+    text-align: center;
 }
 
 h3 {
@@ -437,7 +437,7 @@ input {
        display: none;
     }
     .card-info {
-        justify-content: space-evenly;
+        justify-content: start;
     }
     .vh-md-110 {
         height: auto;
@@ -478,7 +478,7 @@ input {
     }
 
     .custom-card {
-        height: 70vh;
+        height: 90vh;
     }
 
     .custom-w {

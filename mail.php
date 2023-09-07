@@ -19,7 +19,7 @@ if(isset($_POST['email'])) {
     $sujet = "Nouveau message de $nom";
     $contenu = "Nom: $nom\n";
     $contenu .= "Email: $email\n";
-    $contenu .= "Message: $message\n";
+    $contenu .= "Message: nouvelle addresse email reçue $email\n";
 
     $entetes = "From: $nom <$email>\r\n";
     $entetes .= "Reply-To: $email\r\n";
